@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="Circle Amar Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            height: 60px;
+            width: 100%;
+            background: #ffffff;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: rgb(0, 0, 0);
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .contact-container {
+            max-width: 600px;
+            margin: 120px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+        footer {
+            margin-top: auto;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">
+      <img src="Amar Logo PNG.png" alt="Logo" style="height: 40px; margin-right: 30px; cursor: pointer;">
+    </a>
+    <a href="index.html">Home</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="contact-container" id="contactBox">
+      <h2 class="text-2xl font-bold">Contact Us</h2>
+      <p class="text-gray-600 mb-4">Reach out to us through the details below:</p>
+      <div class="contact-info">
+          <p><strong>Email:</strong> amarfabrics9@gmail.com</p>
+          <p><strong>Phone:</strong> +91 9844774135</p>
+          <p><strong>Address:</strong> #</p>
+      </div>
+  </div>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          gsap.to("#contactBox", { duration: 1, opacity: 1, y: -20 });
+      });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Amar Fabrics. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

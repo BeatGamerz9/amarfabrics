@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="Circle Amar Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - Amar Fabrics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav img {
+            height: 40px;
+            margin-right: 50px;
+            cursor: pointer;
+        }
+        nav a {
+            color: rgb(0, 0, 0);
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .container {
+            margin-top: 120px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+        }
+        .btn {
+            background: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        footer {
+            margin-top: auto;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">
+            <img src="Amar Logo.png" alt="Logo">
+        </a>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container" id="getStartedBox">
+        <h1 class="text-3xl font-bold mb-4">Get Started with Amar Fabrics</h1>
+        <p class="text-gray-600 mb-6">
+            Discover premium designer fabrics for all your needs. High-quality materials, elegant designs, and unmatched craftsmanship.
+        </p>
+        <a href="products.html" class="btn">Explore Fabrics</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Amar Fabrics. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            gsap.to("#getStartedBox", { duration: 1, opacity: 1, y: -20 });
+        });
+    </script>
+
+</body>
+</html>
